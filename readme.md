@@ -3,10 +3,15 @@
 mkdir practice
 cd practice
 python3 -m venv .
+```
+Активирую виртуальное окружение 
+```bash
 source bin/activate
 ```
-Устанваливю django и postgress
+Устанваливаю django и postgress
 ```bash
-
+pip install django
+sudo apt update
+sudo apt install postgresql postgresql-contrib
 ```
 
