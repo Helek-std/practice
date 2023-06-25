@@ -30,4 +30,17 @@ django-admin startproject practiceproj
 cd practiceproj
 python3 manage.py  startapp practiceapp
 ```
+Дальше необходимо зайти в аккаунт postgress, в котором создам нового пользователя
+```bash
+sudo -i -u postgres
+createuser --interactive
+```
+создаю user и сразу делаю его super
+```console
+sudo -i -u postgres
+postgres@user-virtual-machine:~$ createuser --interactive
+Enter name of role to add: user
+Shall the new role be a superuser? (y/n) y
+postgres@user-virtual-machine:~$ 
 
+```
