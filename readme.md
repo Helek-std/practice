@@ -14,6 +14,12 @@ pip install django
 sudo apt update
 sudo apt install postgresql postgresql-contrib
 ```
+
+<em>Дальше будет описание хода моей работы, установка всего необходимого завершена</em>
+Можно просто склонировать мой репозиторий
+```bash
+git clone https://github.com/Helek-std/practice.git
+```
 Дальше создам новый проект в django и в нем же новое приложение
 ```bash
 django-admin startproject practiceproj
