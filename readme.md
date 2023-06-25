@@ -36,7 +36,6 @@ sudo -i -u postgres
 ```
 создаю user и сразу делаю его super
 ```console
-sudo -i -u postgres
 postgres@user-virtual-machine:~$ createuser --interactive
 Enter name of role to add: user
 Shall the new role be a superuser? (y/n) y
