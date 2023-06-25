@@ -3,7 +3,7 @@
 mkdir practice
 cd practice
 python3 -m venv .
-scource bin/activate
+source bin/activate
 ```
 Устанваливю django и postgress
 ```bash
