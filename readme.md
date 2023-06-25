@@ -1,4 +1,4 @@
-##Подготовка к работе с проектом
+## Подготовка к работе с проектом
 Начну с создания виртуального окружения и его настройки:
 ```bash
 mkdir practice
@@ -23,7 +23,7 @@ sudo apt install postgresql postgresql-contrib
 git clone https://github.com/Helek-std/practice.git
 ```
 
-##Начало работы с проектом
+## Начало работы с проектом
 Дальше создам новый проект в django и в нем же новое приложение
 ```bash
 django-admin startproject practiceproj
