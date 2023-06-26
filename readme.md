@@ -36,9 +36,20 @@ sudo -i -u postgres
 ```
 создаю user и сразу делаю его super
 ```console
-postgres@user-virtual-machine:~$ createuser --interactive
-Enter name of role to add: user
-Shall the new role be a superuser? (y/n) y
-postgres@user-virtual-machine:~$ exit
+postgres=# CREATE USER myprojectuser WITH PASSWORD 'password';
+CREATE ROLE
+postgres=# GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
+ERROR:  database "myproject" does not exist
+postgres=# GRANT ALL PRIVILEGES ON DATABASE myproj TO myprojectuser;
+GRANT
+postgres=# \q
 logout
 ```
+Затем необходимо провести миграции:
+```bash
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+Окружение настроено, теперь можно преступить непосредственно к заданию
+Сначала необходимо подключить модели из base_models.py (Task) и из wifi_models.py (PassiveWiFiData, PassiveWiFiRecord, ActiveWiFiData)
+И повторно провести миграцию
